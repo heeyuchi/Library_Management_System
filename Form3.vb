@@ -37,4 +37,12 @@ Public Class Form3
 
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Call ExportToExcel(Me.DataGridView1, "Books.xlsx")
+    End Sub
+
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
