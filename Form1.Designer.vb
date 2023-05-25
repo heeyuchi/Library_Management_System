@@ -33,6 +33,7 @@ Partial Class Form1
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
@@ -45,10 +46,10 @@ Partial Class Form1
         Me.ButtonLogin.BackColor = System.Drawing.Color.White
         Me.ButtonLogin.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonLogin.ForeColor = System.Drawing.Color.RosyBrown
-        Me.ButtonLogin.Location = New System.Drawing.Point(255, 267)
+        Me.ButtonLogin.Location = New System.Drawing.Point(401, 264)
         Me.ButtonLogin.Name = "ButtonLogin"
         Me.ButtonLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.ButtonLogin.Size = New System.Drawing.Size(128, 38)
+        Me.ButtonLogin.Size = New System.Drawing.Size(134, 38)
         Me.ButtonLogin.TabIndex = 0
         Me.ButtonLogin.Text = "Login"
         Me.ButtonLogin.UseVisualStyleBackColor = False
@@ -137,6 +138,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.RosyBrown
+        Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.ButtonLogin)
@@ -165,13 +167,29 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Vivaldi", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.RosyBrown
         Me.Label5.Location = New System.Drawing.Point(175, 9)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(472, 47)
+        Me.Label5.Size = New System.Drawing.Size(552, 46)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Library Management System"
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.AutoSize = True
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Font = New System.Drawing.Font("Cambria", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.Button1.ForeColor = System.Drawing.Color.RosyBrown
+        Me.Button1.Location = New System.Drawing.Point(71, 264)
+        Me.Button1.Name = "Button1"
+        Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Button1.Size = New System.Drawing.Size(113, 38)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "User Manual"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -206,4 +224,5 @@ Partial Class Form1
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents Label5 As Label
+    Friend WithEvents Button1 As Button
 End Class
